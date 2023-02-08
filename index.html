@@ -16,6 +16,11 @@
 			grid-gap: 10px;/*it makes the space in between the grid*/
 			max-width: 960px;
 			margin: 0 auto;
+			
+			/* align-items: start;  its used to align the item we can use end ,start, stretch etc*/
+            /* justify-items: end; we also use justify item its also align the item but by the column style*/
+
+
 		}
 		#content div{
 			background: #3bbced;
@@ -29,13 +34,20 @@
 			/*grid-column-start: 1;
 			grid-column-end: 3;*/
 			grid-column: 1 / 3;
+			 /* justify-self: start; 
+			 align-self: start; */
+
 		}
 		.two{
 			grid-column: 3 / 7;
+			/* justify-self:center; 
+			 align-self: center; */
 		}
 		.three{
 			grid-column: 1 / 4;
 			grid-row: 2 / 4;
+			/* justify-self: end; 
+			 align-self: end; */
 		}
 		.four{
 			grid-column: 4 / 7;
@@ -71,12 +83,13 @@
 		<div class="two">2</div>
 		<div class="three">3</div>
 		<!-- nested grid -->
-		<div class="four nested">
+		<!-- <div class="four nested">
            <p>1</p>
 		   <p>2</p>
 		   <p>3</p>
 		   <p>4</p>
-		</div>
+		</div> -->
+		<div class="four">4</div>
 		<div class="five">5</div>
 		<div class="six">6</div>
 
